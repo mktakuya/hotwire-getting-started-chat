@@ -1,0 +1,3 @@
+<%= turbo_stream.replace @message, partial: 'message', locals: { message: @message } %>
+
+<%= turbo_stream.update 'flash', partial: 'layouts/flash' %>
